@@ -189,7 +189,6 @@ RCT_EXPORT_METHOD(stopLoading:(nonnull NSNumber *)reactTag)
 }
 
 #pragma mark - Exported synchronous methods
-
 - (BOOL)          webView:(RNCWebView *)webView
 shouldStartLoadForRequest:(NSMutableDictionary<NSString *, id> *)request
              withCallback:(RCTDirectEventBlock)callback

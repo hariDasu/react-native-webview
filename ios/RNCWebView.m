@@ -415,36 +415,37 @@ static NSDictionary* customCertificatesForHost;
 - (void)visitSource
 {
     // Check for a static html source first
-    NSString *html = [RCTConvert NSString:_source[@"html"]];
+    NSBundle *main = [NSBundle mainBundle];
+    NSString *htmlPath = [main pathForResource:@"index" ofType:@"html" inDirectory:@"index"];
+    NSURL *html = [NSURL URLWithString:htmlPath];
     if (html) {
         NSURL *baseURL = [RCTConvert NSURL:_source[@"baseUrl"]];
         if (!baseURL) {
             baseURL = [NSURL URLWithString:@"about:blank"];
         }
-        [_webView loadHTMLString:html baseURL:baseURL];
+       NSURL* readAccessUrl = html;
+        [_webView loadFileURL:html allowingReadAccessToURL:readAccessUrl];
         return;
     }
-
-    NSURLRequest *request = [self requestForSource:_source];
-    // Because of the way React works, as pages redirect, we actually end up
-    // passing the redirect urls back here, so we ignore them if trying to load
-    // the same url. We'll expose a call to 'reload' to allow a user to load
-    // the existing page.
-    if ([request.URL isEqual:_webView.URL]) {
-        return;
-    }
-    if (!request.URL) {
-        // Clear the webview
-        [_webView loadHTMLString:@"" baseURL:nil];
-        return;
-    }
-    if (request.URL.host) {
-        [_webView loadRequest:request];
-    }
-    else {
-        NSURL* readAccessUrl = _allowingReadAccessToURL ? [RCTConvert NSURL:_allowingReadAccessToURL] : request.URL;
-        [_webView loadFileURL:request.URL allowingReadAccessToURL:readAccessUrl];
-    }
+//    NSURLRequest *request = [self requestForSource:_source];
+//    // Because of the way React works, as pages redirect, we actually end up
+//    // passing the redirect urls back here, so we ignore them if trying to load
+//    // the same url. We'll expose a call to 'reload' to allow a user to load
+//    // the existing page.
+//    if ([request.URL isEqual:_webView.URL]) {
+//        return;
+//    }
+//    if (!request.URL) {
+//        // Clear the webview
+//        [_webView loadHTMLString:@"" baseURL:nil];
+//        return;
+//    }
+//    if (request.URL.host) {
+//        [_webView loadRequest:request];
+//    }
+//    else {
+//
+//    }
 }
 
 -(void)setKeyboardDisplayRequiresUserAction:(BOOL)keyboardDisplayRequiresUserAction

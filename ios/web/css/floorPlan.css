@@ -1,0 +1,126 @@
+#stamp-legend ul.legend {
+  list-style: none;
+  padding: 0;
+}
+#stamp-legend ul.legend > li:not(:last-child) {
+    padding-bottom: 14px;
+}
+#stamp-legend ul.legend > li::before {
+    content: '';
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    background-size: contain;
+    margin-right: 14px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnPgogICAgIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjEwMCIgcj0iOTUiIHN0cm9rZT0iIzAwNzZjMCIgc3Ryb2tlLXdpZHRoPSIxMCIgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIwLjUiLz4KICAgICA8dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNTAiIHk9IjE1MCIgeD0iMTAwIiBmaWxsPSIjMDA3NmMwIj4jPC90ZXh0PgogICAgPC9nPgo8L3N2Zz4=');
+}
+#stamp-legend ul.legend > li.blue::before {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnPgogICAgIDxjaXJjbGUgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNDUlIiBzdHJva2U9IiMwMDc2YzAiIHN0cm9rZS13aWR0aD0iNSUiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC41Ii8+CiAgICAgPHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNzUiIHk9Ijc1JSIgeD0iNTAlIiBmaWxsPSIjMDA3NmMwIj4jPC90ZXh0PgogICAgPC9nPgo8L3N2Zz4=');
+}
+#stamp-legend ul.legend > li.red::before {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnPgogICAgIDxjaXJjbGUgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNDUlIiBzdHJva2U9IiNkOTUzNGYiIHN0cm9rZS13aWR0aD0iNSUiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC41Ii8+CiAgICAgPHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNzUiIHk9Ijc1JSIgeD0iNTAlIiBmaWxsPSIjZDk1MzRmIj4jPC90ZXh0PgogICAgPC9nPgo8L3N2Zz4=');
+}
+#stamp-legend ul.legend > li.green::before {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnPgogICAgIDxjaXJjbGUgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNDUlIiBzdHJva2U9IiM1Y2I4NWMiIHN0cm9rZS13aWR0aD0iNSUiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC41Ii8+CiAgICAgPHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNzUiIHk9Ijc1JSIgeD0iNTAlIiBmaWxsPSIjNWNiODVjIj4jPC90ZXh0PgogICAgPC9nPgo8L3N2Zz4=');
+}
+html, body { height:100%; }
+#mapid { height: calc(100% - 15px); width: 100%;}
+
+.leaflet-draw-toolbar-top {
+  display: none;
+}.
+
+.leaflet-draw-toolbar {
+  margin-top: 0px;
+}
+
+.leaflet-draw-toolbar a.leaflet-draw-draw-item {
+    background-size: 13px;
+    background-position: 9;
+}
+
+.leaflet-draw-tooltip { display: none; }
+.marker-draw-action {
+    top: -42px !important;
+    top: -42px !important;
+}
+.leaflet-draw-draw-penetration, .leaflet-draw-draw-joint, .leaflet-draw-draw-door, .leaflet-draw-draw-damper {
+    display: none !important;
+}
+.fa {
+  font-size: 18px;
+}
+.leaflet-bar {
+border-radius: 6px;
+}
+
+.leaflet-touch .leaflet-bar a:first-child,
+.leaflet-bar button:first-of-type {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.leaflet-touch .leaflet-bar a:last-child,
+.leaflet-bar button:last-of-type {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.leaflet-bar a,
+.leaflet-bar button {
+  color: #fff;
+  background-color: #333;
+  opacity: 0.8;
+}
+
+.leaflet-right .easy-button-container button {
+  padding-top: 7px;
+  padding-left: 6px;
+}
+
+.leaflet-bar a:hover,
+.leaflet-bar button:hover {
+  color: #fff;
+  background-color: #1a1919;
+  opacity: 0.8;
+}
+
+.leaflet-bar a.leaflet-disabled,
+.leaflet-bar a.leaflet-disabled:hover {
+  color: #fff;
+  background-color: #4d4c4c;
+  opacity: 0.8;
+}
+
+.leaflet-marker-icon {
+   background-color: rgba(255,255,255,0.7);
+   border-radius: 50%;
+}
+
+.leaflet-marker-icon.transitions {
+  transition: all 0.3s;
+}
+
+.popup-message {
+  position:absolute;
+  top:25;
+  left:0;
+  width:100%;
+  display:none;
+  z-index:1000;
+}
+.popup-container {
+  background-color:grey;
+  width:50%;
+  margin-left:25%;
+  border-radius: 30px;
+  font-size:18;
+  padding:5px;
+}
+.popup-text {
+  text-align:center;
+  font-size:16;
+  font-family: sans-serif;
+  color:white;
+}
